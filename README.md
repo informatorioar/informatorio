@@ -1,13 +1,23 @@
 # Informatorio
 
+[![Repo en GitHub](https://img.shields.io/badge/GitHub-Repository-blue.svg)](https://github.com/carlosferreyra/informatorio)
+
 ## Indice de Contenido
 
 - [Informatorio](#informatorio)
   - [Indice de Contenido](#indice-de-contenido)
+  - [Acerca de](#acerca-de)
   - [Introducción](#introducción)
   - [Contenidos](#contenidos)
   - [Campus](#campus)
     - [Contacto](#contacto)
+
+## Acerca de
+
+- [Carlos Ferreyra](https://www.linkedin.com/in/eduferreyraok/)
+- [Email](mailto:eduferreyraok@gmail.com)
+- [GitHub](https://github.com/carlosferreyra)
+- [Website Personal](https://www.carlosferreyra.me/)
 
 ## Introducción
 
