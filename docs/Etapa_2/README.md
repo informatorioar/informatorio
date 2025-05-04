@@ -1,8 +1,8 @@
 # Etapa 2
 
-## Analitico Etapa 2 - Desarrollo Web
+## Analítico Etapa 2 - Desarrollo Web
 
-[Ver Analitico](https://campus-informatorio.chaco.gob.ar/mod/resource/view.php?id=638)
+[Ver Analítico](https://campus-informatorio.chaco.gob.ar/mod/resource/view.php?id=638)
 
 ## Programación con Python
 
