@@ -8,4 +8,5 @@
 
 ### Indice de Contenido
 
-- [Semana 1](./semana_1.md)
+- [Semana 1](./semana1.md)
+- [Semana 2](./semana2.md)

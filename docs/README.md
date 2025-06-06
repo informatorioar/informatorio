@@ -30,6 +30,7 @@ brindarles las habilidades necesarias para desenvolverse en un mundo cada vez m�
 
 - **Etapa 1**: [Introducción a la programación](./docs/Etapa_1/README.md)
 - **Etapa 2**: [Desarrollo Web](./docs/Etapa_2/README.md)
+  - _Mentorias Prácticas_: [Ejercicios](../exercises/Etapa2/README.md)
 
 ## Campus
 
