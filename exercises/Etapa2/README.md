@@ -1,13 +1,8 @@
 # Mentorias Practicas Etapa 2
 
-Esta carpeta contiene los ejercicios y proyectos correspondientes a la Etapa 2 de las mentorías
-prácticas.
+Modulo dedicado a las mentorias practicas de la Etapa 2 del curso Informatorio.
 
 ## Contenido
 
-En esta sección encontrarás ejercicios relacionados con conceptos más avanzados del desarrollo de
-software.
-
-## Estructura
-
-Los ejercicios están organizados por temas y dificultad progresiva.
+- [Ejercicios Python](./ejercicios_python/ejercicios.py)
+- [Proyecto TKinter](./proyecto_tkinter/README.md)
