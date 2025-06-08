@@ -12,3 +12,5 @@
 - [Semana 2](./semana2.md)
 - [Semana 3](./semana3.md)
 - [Semana 4](./semana4.md)
+- [Semana 5](./semana5.md)
+- [Semana 6](./semana6.md)
