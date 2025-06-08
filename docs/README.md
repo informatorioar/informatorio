@@ -6,18 +6,11 @@
 
 - [Informatorio](#informatorio)
   - [Indice de Contenido](#indice-de-contenido)
-  - [Acerca de](#acerca-de)
   - [Introducción](#introducción)
   - [Contenidos](#contenidos)
   - [Campus](#campus)
     - [Contacto](#contacto)
-
-## Acerca de
-
-- [Carlos Ferreyra](https://www.linkedin.com/in/eduferreyraok/)
-- [Email](mailto:eduferreyraok@gmail.com)
-- [GitHub](https://github.com/carlosferreyra)
-- [Website Personal](https://www.carlosferreyra.me/)
+  - [Acerca de Repositorio](#acerca-de-repositorio)
 
 ## Introducción
 
@@ -28,8 +21,10 @@ brindarles las habilidades necesarias para desenvolverse en un mundo cada vez m�
 
 ## Contenidos
 
-- **Etapa 1**: [Introducción a la programación](./docs/Etapa_1/README.md)
-- **Etapa 2**: [Desarrollo Web](./docs/Etapa_2/README.md)
+- **Playlist de Videos
+  [Informatorio](https://www.youtube.com/playlist?list=PLxvuVQxok4aI_dkIWXPWOEKE7QszvPdR1)**
+- **Etapa 1**: [Introducción a la programación](./Etapa1/README.md)
+- **Etapa 2**: [Desarrollo Web](./Etapa2/README.md)
   - _Mentorias Prácticas_: [Ejercicios](../exercises/Etapa2/README.md)
 
 ## Campus
@@ -46,3 +41,10 @@ brindarles las habilidades necesarias para desenvolverse en un mundo cada vez m�
 - [![Discord](https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/w5NXgPSs)
   Discord
   - [Comision 8](https://discord.gg/w5NXgPSs)
+
+## Acerca de Repositorio
+
+- [Carlos Ferreyra](https://www.linkedin.com/in/eduferreyraok/)
+- [Email](mailto:eduferreyraok@gmail.com)
+- [GitHub](https://github.com/carlosferreyra)
+- [Website Personal](https://www.carlosferreyra.me/)
