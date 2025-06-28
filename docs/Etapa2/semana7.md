@@ -1,4 +1,4 @@
-# Semana 6
+# Semana 7
 
 - [[YouTube] Clase 13 [14-06-2025]]() -- Link to be updated after the class
 - [[PDF] Clase 13 - Introducción a Bases de Datos](./pdfs/Clase%2013%20-%20Introducción%20a%20Bases%20de%20Datos.pdf)
