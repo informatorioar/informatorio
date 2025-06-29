@@ -24,8 +24,8 @@ brindarles las habilidades necesarias para desenvolverse en un mundo cada vez m�
 - **Playlist de Videos
   [Informatorio](https://www.youtube.com/playlist?list=PLxvuVQxok4aI_dkIWXPWOEKE7QszvPdR1)**
 - **Etapa 1**: [Introducción a la programación](./Etapa1/README.md)
-- **Etapa 2**: [Desarrollo Web](./Etapa2/README.md)
-  - _Mentorias Prácticas_: [Ejercicios](./Etapa2/exercises/README.md)
+- **Etapa 2**: [Desarrollo Web](./documentation/Etapa2/README.md)
+  - _Mentorias Prácticas_: [Ejercicios](./exercises/README.md)
 
 ## Campus
 

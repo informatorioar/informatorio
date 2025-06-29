@@ -2,7 +2,7 @@
 
 ## Analítico Etapa 2 - Desarrollo Web
 
-[Ver Analítico](./pdfs/Analítico%20-%20Etapa%202.pdf)
+[Ver Analítico](../../pdfs/Analítico%20-%20Etapa%202.pdf)
 
 ## Programación con Python
 
