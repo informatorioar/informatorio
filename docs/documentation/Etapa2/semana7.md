@@ -1,3 +1,5 @@
+[Retroceder](./README.md)
+
 # Semana 7
 
 - [[YouTube] Clase 13 [14-06-2025]]() -- Link to be updated after the class

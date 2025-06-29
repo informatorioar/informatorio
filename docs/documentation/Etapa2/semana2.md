@@ -1,3 +1,4 @@
+[Retroceder](./README.md)
 # Semana 2
 
 - [[YouTube] Clase 3 [10-05-2025]](https://youtu.be/T5j24G0xY_w)

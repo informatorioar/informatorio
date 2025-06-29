@@ -1,3 +1,5 @@
+[Retroceder](./README.md)
+
 # Semana 1: Conociendo a la Industria IT
 
 - Bienvenido/a al Informatorio

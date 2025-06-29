@@ -1,3 +1,5 @@
+[Retroceder](./README.md)
+
 # Semana 1
 
 - [[YouTube] Clase 1 [30-04-2025]](https://youtu.be/qYSbpPi1tNw)

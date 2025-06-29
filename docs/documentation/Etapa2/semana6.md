@@ -1,3 +1,5 @@
+[Retroceder](./README.md)
+
 # Semana 6
 
 - [[YouTube] Clase 11 [07-06-2025]](https://youtu.be/4GzVqWcEpkw)
