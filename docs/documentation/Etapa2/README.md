@@ -14,3 +14,6 @@
 - [Semana 4](./semana4.md)
 - [Semana 5](./semana5.md)
 - [Semana 6](./semana6.md)
+- [Semana 7](./semana7.md)
+- [Semana 8](./semana8.md)
+- [Semana 9](./semana9.md)
