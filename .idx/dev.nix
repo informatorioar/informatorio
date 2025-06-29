@@ -7,11 +7,9 @@
   # Use https://search.nixos.org/packages to find packages
   packages = [
     pkgs.github-cli
-    # pkgs.go
-    # pkgs.python311
-    # pkgs.python311Packages.pip
-    # pkgs.nodejs_20
-    # pkgs.nodePackages.nodemon
+    pkgs.uv
+    pkgs.git
+    pkgs.ruff
   ];
 
   # Sets environment variables in the workspace
