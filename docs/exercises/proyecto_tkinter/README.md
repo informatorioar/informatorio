@@ -11,14 +11,14 @@ funcionalidades de interfaces gráficas en Python.
 
 Esta serie de 4 mini proyectos introduce progresivamente los conceptos de Tkinter:
 
-- **[Proyecto 1](./proyecto1.py)** - Fundamentos básicos de Tkinter
-- **[Proyecto 2](./proyecto2.py)** - Widgets y eventos intermedios
-- **[Proyecto 3](./proyecto3.py)** - Layouts y organización avanzada
-- **[Proyecto 4](./proyecto4.py)** - Funcionalidades complejas y menús
+- **[Proyecto 1](./proyecto1/README.md)** - Fundamentos básicos de Tkinter
+- **[Proyecto 2](./proyecto2/README.md)** - Widgets y eventos intermedios
+- **[Proyecto 3](./proyecto3/README.md)** - Layouts y organización avanzada
+- **[Proyecto 4](./proyecto4/README.md)** - Funcionalidades complejas y menús
 
 ### Aplicación Completa
 
-- **[Versión Final](./version_final.py)** - Aplicación unificada con tema oscuro profesional
+- **[Versión Final](./version_final/README.md)** - Aplicación unificada con tema oscuro profesional
 
 ---
 

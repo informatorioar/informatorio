@@ -42,14 +42,14 @@ def get_python_files_content(directory: str) -> list[dict[str, str]]:
     return python_files
 
 
-def generate_readme(python_files: list[dict[str, str]], output_directory: str) -> None:
+def generate_readme(python_files: list[dict[str, str]], output_directory: str, folder_name: str) -> None:
     """Generate README.md with Python file contents in the specified output directory."""
 
     template_content = """# Python Exercises
 
 [Retroceder](../README.md)
 
-This README contains all Python code files from the ejercicios_python folder.
+This README contains all Python code files from the {{ folder_name }} folder.
 
 {% for file in python_files %}
 ## {{ file.filename }}
@@ -61,7 +61,7 @@ This README contains all Python code files from the ejercicios_python folder.
 {% endfor %}"""
 
     template = Template(template_content)
-    rendered_content = template.render(python_files=python_files)
+    rendered_content = template.render(python_files=python_files, folder_name=folder_name)
 
     # Ensure output directory exists
     output_path = Path(output_directory)
@@ -136,6 +136,9 @@ def main() -> None:
     print(f"Input directory: {input_dir}")
     print(f"Output directory: {output_dir}")
 
+    # Get the folder name from the input directory
+    folder_name = input_dir.name
+
     # Get all Python files content from input directory
     python_files = get_python_files_content(str(input_dir))
 
@@ -144,7 +147,7 @@ def main() -> None:
         return
 
     # Generate the README in output directory
-    generate_readme(python_files, str(output_dir))
+    generate_readme(python_files, str(output_dir), folder_name)
 
     print(f"Found {len(python_files)} Python files:")
     for file in python_files:
