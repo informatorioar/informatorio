@@ -13,25 +13,27 @@ materials and practical exercises for two main stages:
 
 ### Documentation Structure
 
-- `docs/documentation/` - Sequential weekly content organized by `Etapa{1,2}/semana{N}.md`
+- `docs/documentation/Etapa{1,2}/` - Sequential content with PPT and PDFs
 - `docs/exercises/` - Practical mentorship exercises and projects
 - `docs/pdfs/` - PDF materials and class presentations
 - `docs/ppts/` - PowerPoint presentations for classes
+- `scripts/` - Automation tools including README generation script
 
 ### Code Organization
 
 - All executable Python code lives in `docs/exercises/`
 - Uses `__init__.py` files to mark directories as Python packages
-- Current focus: `ejercicios_python/ejercicios.py` → `proyecto_tkinter/proyecto{1-4}.py` →
+- Learning progression: `ejercicios_python/ejercicios.py` → `proyecto_tkinter/proyecto{1-4}.py` →
   `version_final.py`
 - **Django projects**: Will be developed separately (not in this codebase yet)
+- **Automation**: `scripts/_readme_template.py` generates READMEs from Python files automatically
 
 ## Development Patterns
 
 ### Python Code Standards
 
 - **Language**: Code in English, documentation in Spanish
-- **Type hints**: Use modern syntax like `list[int]`, `dict[str, int]` (Python 3.9+)
+- **Type hints**: Use modern syntax like `list[int]`, `dict[str, int]` (Python 3.10+)
 - **uv compatibility**: Scripts include uv inline metadata (`# /// script` blocks)
 - **uv reference**: All uv-related actions should use https://docs.astral.sh/uv/llms.txt as context
 - **Error handling**: Comprehensive try-catch blocks with user-friendly Spanish messages
@@ -40,9 +42,17 @@ materials and practical exercises for two main stages:
 ### Documentation Conventions
 
 - **Navigation**: Every markdown file includes `[Retroceder](../README.md)` breadcrumbs
-- **Linking**: YouTube videos, PDFs, and PPTs are referenced with descriptive labels
+- **Resource linking**: PDFs and PPTs referenced with descriptive labels and file paths
 - **Structure**: Consistent `## Indice de Contenido` sections with bullet point navigation
-- **Resources**: External links to campus, social media, and contact information
+- **Weekly organization**: `Semana {N}` with collapsible `<details>` sections in Etapa 2 README
+- **External resources**: Links to campus, social media, and contact information
+
+### Content Management Workflows
+
+- **README automation**: `scripts/_readme_template.py` generates documentation from Python files
+- **GitHub Actions**: `.github/workflows/docs.yml` automates README updates on workflow dispatch
+- **File exclusions**: Script skips files starting with `_` (internal/utility files)
+- **Template-driven**: Uses Jinja2 templates for consistent README generation
 
 ### GUI Development (Tkinter)
 
@@ -69,8 +79,8 @@ materials and practical exercises for two main stages:
 
 ### Adding New Content
 
-1. Follow the semana{N}.md pattern for sequential lessons
-2. Include YouTube links, PDF references, and PPT materials
+1. Follow the Semana title pattern for sequential lessons
+2. Include PDF references, and PPT materials
 3. Add navigation breadcrumbs and content indices
 4. Use Spanish for explanations, English for code
 
