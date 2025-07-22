@@ -1,6 +1,6 @@
 # Informatorio
 
-[![Repo en GitHub](https://img.shields.io/badge/GitHub-Repository-blue.svg)](https://github.com/carlosferreyra/informatorio)
+[![Repo en GitHub](https://img.shields.io/badge/GitHub-Repository-blue.svg)](https://github.com/informatorioar/informatorio)
 
 ## Indice de Contenido
 
