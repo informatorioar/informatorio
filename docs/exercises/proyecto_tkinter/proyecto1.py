@@ -6,17 +6,17 @@
 import tkinter as tk
 
 # Crear una ventana simple para probar
-ventana = tk.Tk()
+ventana: tk.Tk = tk.Tk()
 ventana.title("Menu Desplegable")
 ventana.geometry("400x200")
 
-barra_menu = tk.Menu(ventana)
+barra_menu: tk.Menu = tk.Menu(ventana)
 ventana.config(menu=barra_menu)
 
-menu_principal = tk.Menu(barra_menu, tearoff=0)
+menu_principal: tk.Menu = tk.Menu(barra_menu, tearoff=0)
 barra_menu.add_cascade(label="Principal", menu=menu_principal)
 
-submenu = tk.Menu(menu_principal, tearoff=0)
+submenu: tk.Menu = tk.Menu(menu_principal, tearoff=0)
 menu_principal.add_cascade(label="Opciones", menu=submenu)
 
 submenu.add_command(label="Opción 1")

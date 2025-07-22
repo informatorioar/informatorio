@@ -6,15 +6,15 @@
 import tkinter as tk
 
 # Crear una ventana simple para probar
-ventana = tk.Tk()
+ventana: tk.Tk = tk.Tk()
 ventana.title("Reloj simple")
 ventana.geometry("400x200")
 
-reloj = tk.Label(ventana, font=("Arial", 60),bg="blue", fg="white")
+reloj: tk.Label = tk.Label(ventana, font=("Arial", 60),bg="blue", fg="white")
 
-def hora():
+def hora() -> None:
     import time
-    hora_actual = time.strftime("%H:%M:%S")
+    hora_actual: str = time.strftime("%H:%M:%S")
     reloj.config(text=hora_actual)
     reloj.after(1000, hora)
 
