@@ -1,0 +1,28 @@
+name: Update Docs
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  update-docs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13.x'
+      - name: Setup UV
+        uses: astral-sh/setup-uv@v6
+      - name: Run script to update README.md
+        run: |
+          uv run scripts/_readme_template.py docs/exercises/ejercicios_python
+          uv run scripts/_readme_template.py docs/exercises/proyecto_tkinter
+      - name: Commit and push changes
+        run: |
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"

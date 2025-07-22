@@ -5,6 +5,8 @@
 
 import os
 import glob
+import argparse
+from pathlib import Path
 from jinja2 import Template
 
 
@@ -40,10 +42,12 @@ def get_python_files_content(directory: str) -> list[dict[str, str]]:
     return python_files
 
 
-def generate_readme(python_files: list[dict[str, str]], output_path: str) -> None:
-    """Generate README.md with Python file contents."""
+def generate_readme(python_files: list[dict[str, str]], output_directory: str) -> None:
+    """Generate README.md with Python file contents in the specified output directory."""
 
     template_content = """# Python Exercises
+
+[Retroceder](../README.md)
 
 This README contains all Python code files from the ejercicios_python folder.
 
@@ -59,31 +63,88 @@ This README contains all Python code files from the ejercicios_python folder.
     template = Template(template_content)
     rendered_content = template.render(python_files=python_files)
 
+    # Ensure output directory exists
+    output_path = Path(output_directory)
+    output_path.mkdir(parents=True, exist_ok=True)
+
+    # Create full path for README.md
+    readme_file_path = output_path / "README.md"
+
     try:
-        with open(output_path, 'w', encoding='utf-8') as f:
+        with open(readme_file_path, 'w', encoding='utf-8') as f:
             f.write(rendered_content)
-        print(f"README.md generated successfully at: {output_path}")
+        print(f"README.md generated successfully at: {readme_file_path}")
     except Exception as e:
         print(f"Error writing README.md: {e}")
 
 
+def parse_arguments() -> argparse.Namespace:
+    """Parse command line arguments."""
+    parser = argparse.ArgumentParser(
+        description="Generate README.md from Python files in a directory",
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog="""
+Examples:
+  python _readme_template.py                           # Current folder as input and output
+  python _readme_template.py /path/to/python/files     # Specified input, same as output
+  python _readme_template.py /path/to/input /path/to/output  # Both paths specified
+  python _readme_template.py . ./output               # Current dir input, different output
+        """
+    )
+
+    parser.add_argument(
+        "input_path",
+        type=str,
+        nargs='?',  # Make optional
+        default=".",  # Default to current directory
+        help="Path to the folder containing Python files to parse (default: current directory)"
+    )
+
+    parser.add_argument(
+        "output_path",
+        type=str,
+        nargs='?',  # Make optional
+        default=None,  # Will be set to input_path if not provided
+        help="Path to the folder where README.md will be written (default: same as input_path)"
+    )
+
+    return parser.parse_args()
+
+
 def main() -> None:
     """Main function to generate README.md with all Python files."""
-    # Get the current directory where the script is located
-    current_dir = os.path.dirname(os.path.abspath(__file__))
+    # Parse command line arguments
+    args = parse_arguments()
 
-    # Get all Python files content
-    python_files = get_python_files_content(current_dir)
+    # Set default output path to input path if not provided
+    if args.output_path is None:
+        args.output_path = args.input_path
 
-    if not python_files:
-        print("No Python files found to include in README.md")
+    # Convert to absolute paths
+    input_dir = Path(args.input_path).resolve()
+    output_dir = Path(args.output_path).resolve()
+
+    # Validate input directory exists
+    if not input_dir.exists():
+        print(f"Error: Input directory '{input_dir}' does not exist")
         return
 
-    # Output path for README.md in the same directory
-    readme_path = os.path.join(current_dir, "README.md")
+    if not input_dir.is_dir():
+        print(f"Error: Input path '{input_dir}' is not a directory")
+        return
 
-    # Generate the README
-    generate_readme(python_files, readme_path)
+    print(f"Input directory: {input_dir}")
+    print(f"Output directory: {output_dir}")
+
+    # Get all Python files content from input directory
+    python_files = get_python_files_content(str(input_dir))
+
+    if not python_files:
+        print(f"No Python files found in directory: {input_dir}")
+        return
+
+    # Generate the README in output directory
+    generate_readme(python_files, str(output_dir))
 
     print(f"Found {len(python_files)} Python files:")
     for file in python_files:
