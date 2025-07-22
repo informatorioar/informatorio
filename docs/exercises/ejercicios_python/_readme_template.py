@@ -18,8 +18,8 @@ def get_python_files_content(directory: str) -> list[dict[str, str]]:
     for file_path in py_files:
         file_name = os.path.basename(file_path)
 
-        # Skip the readme_template.py file itself
-        if file_name == "readme_template.py":
+        # Skip files that start with underscore (internal/utility files)
+        if file_name.startswith("_"):
             continue
 
         try:
