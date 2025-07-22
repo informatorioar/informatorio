@@ -9,7 +9,7 @@
 ### Contenido por Semanas
 
 <details>
-<summary><strong>📅 Semana 1 - Bienvenida y Conceptos Básicos</strong></summary>
+<summary>📅 Semana 1 - Bienvenida y Conceptos Básicos</summary>
 
 - [[YouTube] Clase 1 [30-04-2025]](https://youtu.be/qYSbpPi1tNw)
 - [[PPT] Clase 1 - Bienvenidos](../../ppts/Etapa%202-%20Clase%201%20-%20Bienvenidos!.pptx)
@@ -21,7 +21,7 @@
 </details>
 
 <details>
-<summary><strong>📅 Semana 2 - Estructuras de Control</strong></summary>
+<summary>📅 Semana 2 - Estructuras de Control</summary>
 
 - [[YouTube] Clase 3 [10-05-2025]](https://youtu.be/T5j24G0xY_w)
 - [[PDF] Clase 3 - Estructuras de Control](../../pdfs/Etapa%202-%20Clase%203.pdf)
@@ -32,7 +32,7 @@
 </details>
 
 <details>
-<summary><strong>📅 Semana 3 - Estructuras de Datos</strong></summary>
+<summary>📅 Semana 3 - Estructuras de Datos</summary>
 
 - [[YouTube] Clase 5 [17-05-2025]](https://youtu.be/_fEq5oE4tOo)
 - [[PDF] Clase 5 - Estructuras de Datos](../../pdfs/Etapa%202%20-%20Clase%205.pdf)
@@ -43,7 +43,7 @@
 </details>
 
 <details>
-<summary><strong>📅 Semana 4 - Funciones y Módulos</strong></summary>
+<summary>📅 Semana 4 - Funciones y Módulos</summary>
 
 - [[YouTube] Clase 7 [24-05-2025]](https://youtu.be/rMq0B13ACCQ)
 - [[PDF] Clase 7 - Funciones](../../pdfs/Etapa%202%20-%20Clase%207.pdf)
@@ -55,7 +55,7 @@
 </details>
 
 <details>
-<summary><strong>📅 Semana 5 - Metodologías Ágiles y POO</strong></summary>
+<summary>📅 Semana 5 - Metodologías Ágiles y POO</summary>
 
 - [[YouTube] Clase 9 [31-05-2025]](https://youtu.be/NBvgeHvIPuM)
 - [[PDF] Clase 9 - Metodologías Ágiles](../../pdfs/Etapa%202%20-%20Clase%209%20.pdf)
@@ -67,7 +67,7 @@
 </details>
 
 <details>
-<summary><strong>📅 Semana 6 - Herencia y Polimorfismo</strong></summary>
+<summary>📅 Semana 6 - Herencia y Polimorfismo</summary>
 
 - [[YouTube] Clase 11 [07-06-2025]](https://youtu.be/4GzVqWcEpkw)
 - [[PDF] Clase 11 - Herencia y Polimorfismo](../../pdfs/Clase%2011%20-%20Herencia%20y%20Polimorfismo.pdf)
@@ -77,7 +77,7 @@
 </details>
 
 <details>
-<summary><strong>📅 Semana 7 - Introducción a Bases de Datos</strong></summary>
+<summary>📅 Semana 7 - Introducción a Bases de Datos</summary>
 
 - [[YouTube] Clase 13 [14-06-2025]]() -- Link por actualizar después de la clase
 - [[PDF] Clase 13 - Introducción a Bases de Datos](../../pdfs/Clase%2013%20-%20Introducción%20a%20Bases%20de%20Datos.pdf)
@@ -88,7 +88,7 @@
 </details>
 
 <details>
-<summary><strong>📅 Semana 8 - SQL</strong></summary>
+<summary>📅 Semana 8 - SQL</summary>
 
 - [[YouTube] Clase 15 [21-06-2025]]() -- Link por actualizar después de la clase
 - [[PDF] Clase 15 - MER a Tablas SQL](../../pdfs/Clase%2015%20-%20MER%20a%20Tablas%20%20SQL.pdf)
@@ -97,7 +97,7 @@
 </details>
 
 <details>
-<summary><strong>📅 Semana 9 - Integración SQL y Python</strong></summary>
+<summary>📅 Semana 9 - Integración SQL y Python</summary>
 
 - [[YouTube] Clase 16 [24-06-2025]]() -- Link por actualizar después de la clase
 - [[PDF] Clase 16 - Integración SQL y Python](../../pdfs/Clase%2016%20-%20Integración%20SQL%20y%20Python.pdf)
@@ -105,7 +105,7 @@
 </details>
 
 <details>
-<summary><strong>📅 Semana 10 - Django y Proyecto Final</strong></summary>
+<summary>📅 Semana 10 - Django y Proyecto Final</summary>
 
 0
 

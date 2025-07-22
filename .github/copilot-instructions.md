@@ -2,9 +2,33 @@
 
 ## Project Overview
 
-This is an educational repository for the **Informatorio** course - a government-sponsored
-programming training program in Chaco Province, Argentina. The codebase contains structured learning
-materials and practical exercises for two main stages:
+This is an educational repository for ### Adding New Content
+
+1. Follow the `semana{N}.md` pattern for sequential lessons with YouTube video thumbnails
+2. Include YouTube links using
+   `[![Title](https://img.youtube.com/vi/VIDEO_ID/default.jpg)](https://youtu.be/VIDEO_ID)` format
+3. Reference PDF and PPT materials with descriptive labels and correct file paths
+4. Add navigation breadcrumbs `[Retroceder](../README.md)` to all markdown files
+5. Use Spanish for explanations, English for code
+6. For Etapa 2: Use collapsible `<details><summary>` sections for weekly content
+
+### Python Scripts
+
+1. Include uv inline script metadata (`# /// script` blocks) for dependency management
+2. Add comprehensive docstrings in Spanish explaining purpose and functionality
+3. Use modern type hints (`list[int]`, `dict[str, int]`) for Python 3.9+
+4. Implement robust error handling with Spanish user messages
+5. Test with `uv run script_name.py`
+6. Follow the pattern: skip files starting with `_` for internal/utility scripts
+
+### Documentation Generation
+
+1. Use `scripts/_readme_template.py` to auto-generate README files from Python code
+2. Run manually: `uv run scripts/_readme_template.py path/to/folder`
+3. GitHub Actions automates this for exercise folders on workflow dispatch
+4. Template includes folder name context and excludes underscore-prefixed filesorio\*\* course - a
+   government-sponsored programming training program in Chaco Province, Argentina. The codebase
+   contains structured learning materials and practical exercises for two main stages:
 
 - **Etapa 1**: Introduction to web development (HTML, CSS, Git/GitHub)
 - **Etapa 2**: Python programming fundamentals, Tkinter GUI (warm-up), then Django web development
@@ -57,10 +81,12 @@ materials and practical exercises for two main stages:
 ### GUI Development (Tkinter)
 
 - **Purpose**: Warm-up exercises for GUI concepts before Django web development
-- **Progression**: Four incremental projects building to a complete application
-- **Theming**: Dark theme with consistent colors (`#1e1e1e`, `#2d2d30`, `#0078d4`)
-- **Architecture**: Object-oriented design with main class containing all components
-- **User feedback**: Status bars, message boxes, and input validation in Spanish
+- **Progressive learning**: Four incremental projects (proyecto1-4) building to complete application
+- **Theming**: Consistent dark theme (`#1e1e1e`, `#2d2d30`, `#0078d4`)
+- **Architecture**: Object-oriented design with main application class
+- **User experience**: Status bars, message boxes, and input validation in Spanish
+- **Example pattern**: `version_final.py` demonstrates complete application structure with menus,
+  real-time clock, task management, and professional styling
 
 ## Key Files & Their Purpose
 
@@ -72,8 +98,17 @@ materials and practical exercises for two main stages:
 
 ### Code Examples
 
-- `docs/exercises/ejercicios_python/ejercicios.py` - 10 fundamental Python exercises
-- `docs/exercises/proyecto_tkinter/version_final.py` - Complete Tkinter application template
+- `docs/exercises/ejercicios_python/ejercicios.py` - 10 fundamental Python exercises with
+  comprehensive error handling
+- `docs/exercises/proyecto_tkinter/version_final.py` - Complete Tkinter application template with
+  dark theme
+- `scripts/_readme_template.py` - Automated documentation generation tool using Jinja2 templates
+
+### Automation & Tools
+
+- `scripts/_readme_template.py` - Generates README files from Python code with Jinja2 templating
+- `.github/workflows/docs.yml` - GitHub Actions workflow for automated documentation updates
+- `uv` package manager with inline script metadata for dependency management
 
 ## Development Workflow
 
@@ -108,11 +143,13 @@ materials and practical exercises for two main stages:
 
 ## External Dependencies & Tools
 
-- **uv**: Primary Python package manager (referenced in .gitignore and scripts)
-- **Tkinter**: Standard library for GUI development
-- **YouTube**: Video content hosting and embedding
+- **uv**: Primary Python package manager with inline script metadata support
+- **Tkinter**: Standard library for GUI development (no external dependencies)
+- **Jinja2**: Template engine for automated README generation (script dependency)
+- **YouTube**: Video content hosting with thumbnail embedding pattern
 - **Discord**: Community interaction (Comision 8 channel)
-- **GitHub**: Version control and documentation hosting
+- **GitHub Actions**: Automated workflows for documentation maintenance
+- **IDE Support**: .idx/dev.nix configuration for cloud development environments
 
 ## Content Standards
 
